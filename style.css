@@ -1,0 +1,69 @@
+/*
+  Portfolio — Mohammad Gousuddin
+  Responsive, accessible, and clean.
+*/
+:root{
+  --bg:#0f1117; --card:#171923; --text:#e6e9ef; --muted:#a0a6b8;
+  --brand:#50c878; --border:#232538; --accent:#7dd3fc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text)}
+img{max-width:100%; display:block}
+a{color:var(--accent); text-decoration:none}
+.container{max-width:1100px; margin:0 auto; padding:0 1rem}
+
+/* Nav */
+.nav{position:sticky; top:0; backdrop-filter:saturate(140%) blur(8px); background:#0f1117cc; border-bottom:1px solid var(--border); z-index:10}
+.nav .wrap{display:flex; align-items:center; justify-content:space-between; padding:.75rem 0}
+.brand{font-weight:700; color:#fff; letter-spacing:.5px}
+.brand span{color:var(--brand)}
+.menu{display:flex; gap:1rem}
+.menu a{padding:.5rem .75rem; border-radius:.5rem; color:var(--text)}
+.menu a:hover,.menu a.active{background:var(--card)}
+.menu-toggle{display:none; border:1px solid var(--border); background:var(--card); color:#fff; border-radius:.5rem; padding:.4rem .6rem}
+
+/* Hero */
+.page-hero{padding:3rem 0; border-bottom:1px solid var(--border)}
+.hero-grid{display:grid; grid-template-columns:220px 1fr; gap:2rem; align-items:center}
+.profile{border-radius:1rem; border:2px solid var(--border)}
+.cta{display:flex; gap:.75rem; margin:1rem 0}
+.badges{display:flex; gap:.5rem; list-style:none; padding:0; margin:1rem 0}
+.badges li{background:var(--card); color:var(--muted); border:1px solid var(--border); padding:.35rem .6rem; border-radius:.5rem; font-size:.85rem}
+
+/* Buttons */
+.btn{display:inline-block; background:var(--brand); color:#06120b; padding:.6rem .9rem; border-radius:.6rem; font-weight:600; border:1px solid #3ab66a}
+.btn.secondary{background:transparent; color:var(--text); border:1px solid var(--border)}
+.btn.tertiary{background:transparent; color:var(--accent); border:1px solid var(--accent)}
+.btn:hover{filter:brightness(1.05)}
+
+/* Layout */
+section{padding:2rem 0}
+.page{padding:2rem 0}
+.grid{display:grid; gap:1rem}
+.cols-2{grid-template-columns:repeat(2,1fr)}
+.cols-3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card); border:1px solid var(--border); border-radius:1rem; padding:1rem}
+.card h3{margin-top:0}
+.clean{list-style:none; padding:0; margin:0}
+.list{list-style:disc; padding-left:1.2rem}
+.timeline .card{margin-bottom:1rem}
+.meta{color:var(--muted); font-weight:400}
+
+/* Footer */
+footer{border-top:1px solid var(--border); padding:1rem 0; color:var(--muted)}
+
+/* Forms */
+label{display:block; margin:.5rem 0 .25rem}
+input, textarea{width:100%; padding:.6rem .7rem; border-radius:.6rem; border:1px solid var(--border); background:#0b0d13; color:var(--text)}
+input:focus, textarea:focus{outline:2px solid var(--brand)}
+
+/* Responsive */
+@media (max-width: 800px){
+  .hero-grid{grid-template-columns:1fr}
+}
+@media (max-width: 700px){
+  .menu-toggle{display:block}
+  .menu{display:none; flex-direction:column; gap:.5rem; padding:.5rem 0}
+  .menu.open{display:flex}
+}
