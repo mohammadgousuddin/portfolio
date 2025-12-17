@@ -197,6 +197,19 @@ footer{padding:2rem 0;color:#fff;border-top:1px solid rgba(255,255,255,0.04);bac
   .popout-panel{right:12px;left:12px;width:auto;max-width:unset}
 }
 
+/* Education & Projects details formatting */
+.meta{color:var(--muted);font-size:.95rem;font-weight:600;margin-left:.4rem}
+.points{margin:.6rem 0 0 0;padding-left:1.1rem}
+.points li{margin:.35rem 0;line-height:1.45}
+.project-item .desc{margin-top:.4rem;color:var(--muted)}
+.education-item h3,.project-item h3{display:flex;align-items:baseline;gap:.6rem;font-size:1.15rem}
+.card .points{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:.6rem;border-radius:.45rem}
+
+/* education list */
+.education-list{list-style:none;padding:0;margin-top:1rem;display:flex;flex-direction:column;gap:.6rem}
+.education-list li a{display:block;padding:.8rem 1rem;border-radius:.6rem;background:var(--bg-soft);border:1px solid var(--border);text-decoration:none;color:var(--text);font-weight:600}
+.education-list li a:hover{box-shadow:0 10px 30px rgba(2,6,23,.06)}
+
 /* Section headers */
 h1,h2,h3{letter-spacing:.3px}
 
