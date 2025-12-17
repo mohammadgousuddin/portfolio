@@ -264,3 +264,22 @@ links.forEach(a => {
   consoleEl.querySelector('#close-console').addEventListener('click', ()=>{ stopConsole(); btn.textContent = 'Open Dev Console'; });
 
 })();
+
+/* ===== Context-aware 'Back to list' for certificates ===== */
+document.addEventListener('DOMContentLoaded', ()=>{
+  const back = document.querySelector('.back-to-list');
+  if (!back) return;
+
+  back.addEventListener('click', (e)=>{
+    const ref = document.referrer || '';
+    // If user navigated here from experience/education/projects, route back to that page
+    if (/\/(experience|education|projects)\.html/.test(ref)){
+      e.preventDefault();
+      window.location = ref;
+      return;
+    }
+    // otherwise prefer history.back if possible (keeps the user's flow)
+    if (history.length > 1){ e.preventDefault(); history.back(); }
+    // else fall back to the href already present (certifications.html)
+  });
+});
