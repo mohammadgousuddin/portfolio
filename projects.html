@@ -23,12 +23,12 @@
 }</script>
 </head>
 <body>
-  <nav class="nav">
+  <nav class="nav" role="banner">
   <div class="container">
     <div class="wrap">
       <a class="brand" href="index.html">Mohammad <span>Gousuddin</span></a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <div class="menu">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <div id="main-menu" class="menu" role="navigation">
         <a href="index.html">Home</a>
         <a href="experience.html">Experience</a>
         <a href="education.html">Education</a>
@@ -45,18 +45,24 @@
       <h1>Projects</h1>
       <div class="grid cols-3">
         <article class="card">
+          <div class="project-thumb">BIM</div>
           <h3>Residential BIM Model</h3>
           <p>Developed a 3D Revit model including structural elements, schedules, and sheets.</p>
+          <p class="meta">Completion: 2024 — <a class="btn tertiary" href="certificates/cert-05/" aria-label="View certificate for Residential BIM Model">View certificate</a></p>
           <a class="btn tertiary" href="#">Preview</a>
         </article>
         <article class="card">
+          <div class="project-thumb">QA/QC</div>
           <h3>QA/QC Checklist Suite</h3>
           <p>Created inspection checklists and pour log templates to standardize site quality.</p>
+          <p class="meta">Completion: 2023 — <a class="btn tertiary" href="certificates/cert-06/" aria-label="View certificate for QA/QC Checklist Suite">View certificate</a></p>
           <a class="btn tertiary" href="#">Download</a>
         </article>
         <article class="card">
+          <div class="project-thumb">Analytics</div>
           <h3>Concrete Test Analytics</h3>
           <p>Analyzed slump and strength test data; visualized trends and nonconformance patterns.</p>
+          <p class="meta">Completion: 2022 — <a class="btn tertiary" href="certificates/cert-07/" aria-label="View certificate for Concrete Test Analytics">View certificate</a></p>
           <a class="btn tertiary" href="#">Read Case Study</a>
         </article>
       </div>

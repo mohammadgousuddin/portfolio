@@ -23,12 +23,12 @@
 }</script>
 </head>
 <body>
-  <nav class="nav">
+  <nav class="nav" role="banner">
   <div class="container">
     <div class="wrap">
       <a class="brand" href="index.html">Mohammad <span>Gousuddin</span></a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <div class="menu">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <div id="main-menu" class="menu" role="navigation">
         <a href="index.html">Home</a>
         <a href="experience.html">Experience</a>
         <a href="education.html">Education</a>
@@ -46,10 +46,12 @@
       <div class="grid cols-2">
         <article class="card">
           <h3>B.Tech (Civil Engineering) <span class="meta">2020</span></h3>
+          <p class="meta">Completion: 2020 — <a class="btn tertiary" href="certificates/cert-03/" aria-label="View certificate for B.Tech degree">View certificate</a></p>
           <p>Core foundations in structures, materials, surveying, and site management.</p>
         </article>
         <article class="card">
           <h3>M.Sc (Data Science) — Candidate <span class="meta">2025–2027</span></h3>
+          <p class="meta">Expected completion: 2027 — <a class="btn tertiary" href="certificates/cert-04/" aria-label="View certificate for M.Sc data science">View certificate</a></p>
           <p>Statistics, machine learning, Python, visualization, and cybersecurity fundamentals.</p>
         </article>
       </div>

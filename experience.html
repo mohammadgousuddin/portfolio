@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
   <title>Experience — Mohammad Gousuddin</title>
@@ -23,12 +25,12 @@
 }</script>
 </head>
 <body>
-  <nav class="nav">
+  <nav class="nav" role="banner">
   <div class="container">
     <div class="wrap">
       <a class="brand" href="index.html">Mohammad <span>Gousuddin</span></a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <div class="menu">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <div id="main-menu" class="menu" role="navigation">
         <a href="index.html">Home</a>
         <a href="experience.html">Experience</a>
         <a href="education.html">Education</a>
@@ -46,6 +48,7 @@
       <div class="timeline">
         <article class="card">
           <h3>Sree Constructions — Quality Control Engineer <span class="meta">2020–2025</span></h3>
+          <p class="meta">Completion: 2022 — <a class="btn tertiary" href="certificates/cert-01/" aria-label="View certificate for Sree Constructions">View certificate</a></p>
           <ul>
             <li>Led QA/QC documentation and NCR resolution across multi-storey projects.</li>
             <li>Coordinated lab tests (slump, compressive strength) and material approvals.</li>
@@ -54,6 +57,7 @@
         </article>
         <article class="card">
           <h3>Codevo Academy — Operations & HR Associate <span class="meta">2023–2025</span></h3>
+          <p class="meta">Completion: 2024 — <a class="btn tertiary" href="certificates/cert-02/" aria-label="View certificate for Codevo Academy">View certificate</a></p>
           <ul>
             <li>Managed admissions, scheduling, and instructor onboarding.</li>
             <li>Maintained CRM records and standardized internal reporting.</li>

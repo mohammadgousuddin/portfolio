@@ -23,12 +23,12 @@
 }</script>
 </head>
 <body>
-  <nav class="nav">
+  <nav class="nav" role="banner">
   <div class="container">
     <div class="wrap">
       <a class="brand" href="index.html">Mohammad <span>Gousuddin</span></a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <div class="menu">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <div id="main-menu" class="menu" role="navigation">
         <a href="index.html">Home</a>
         <a href="experience.html">Experience</a>
         <a href="education.html">Education</a>
@@ -44,7 +44,7 @@
   <!-- Page -->
   <main class="page">
     <div class="container">
-      <section class="page-hero">
+      <!-- <section class="page-hero">
         <div class="hero-grid">
           <div>
             <h1 style="margin:0 0 .5rem;">Certifications</h1>
@@ -52,8 +52,7 @@
               Verified credentials and professional training aligned to QA/QC and civil engineering.
             </p>
             <div class="cta">
-              <a class="btn" href="https://www.linkedin.com/in/md-ghousuddin/" target="_blank" rel="    </a>
-              <a class="btn secondary"a>
+              <a class="btn" href="https://www.linkedin.com/in/md-ghousuddin/" target="_blank" rel="noopener">LinkedIn</a>
             </div>
             <ul class="badges">
               <li>QA/QC</li>
@@ -65,76 +64,35 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Certifications List -->
+      <!-- Certifications List (names only) -->
       <section>
-        <div class="grid cols-2">
-          <!-- Diploma in Quality Control & Quality Assurance -->
-          <article class="card">
-            <h3>Diploma in Quality Control &amp; Quality Assurance</h3>
-            <p class="meta">Imech Institute Pvt Ltd</p>
-            <p class="meta">Issued: Nov 2022 &middot; Credential ID: 20221508</p>
-            <!-- Optional credential link -->
-            <!-- https://...View credential</a> -->
-            <ul class="badges">
-              <li>HVAC</li>
-              <li>QA/QC</li>
-              <li>NDT</li>
-              <li>MEP</li>
-              <li>Safety</li>
-              <li>NEBOSH</li>
-              <li>CSWIP</li>
-            </ul>
-          </article>
-
-          <!-- Revit Structure Certified Professional -->
-          <article class="card">
-            <h3>Revit Structure Certified Professional</h3>
-            <p class="meta">Autodesk</p>
-            <!-- https://...View credential</a> -->
-            <ul class="badges">
-              <li>Autodesk</li>
-              <li>Revit</li>
-              <li>Structure</li>
-            </ul>
-          </article>
-
-          <!-- One-day Technical Fest (Photoshop) -->
-          <article class="card">
-            <h3>One-day Technical Fest: Techno Fresh 2k15 (Photoshop)</h3>
-            <p class="meta">Institution Workshop</p>
-            <p class="meta">Issued: Apr 2015</p>
-            <ul class="badges">
-              <li>Photoshop</li>
-              <li>Workshop</li>
-            </ul>
-          </article>
-
-          <!-- In Progress -->
-          <article class="card">
-            <h3>Python for Data Analysis</h3>
-            <p class="meta">Self-paced learning</p>
-            <p class="meta">Status: In progress</p>
-            <ul class="badges">
-              <li>Python</li>
-              <li>Pandas</li>
-              <li>Data Analysis</li>
-            </ul>
-          </article>
+        <div class="cert-grid">
+          <a class="cert-tile" href="certificates/cert-01/"><h4>Diploma in Quality Control &amp; Quality Assurance</h4><p class="meta">Imech Institute</p></a>
+          <a class="cert-tile" href="certificates/cert-02/"><h4>Revit Structure Certified Professional</h4><p class="meta">Autodesk</p></a>
+          <a class="cert-tile" href="certificates/cert-03/"><h4>One-day Technical Fest: Photoshop</h4><p class="meta">Institution Workshop</p></a>
+          <a class="cert-tile" href="certificates/cert-04/"><h4>Python for Data Analysis</h4><p class="meta">Self-paced</p></a>
+          <a class="cert-tile" href="certificates/cert-05/"><h4>Concrete Testing &amp; Analysis</h4><p class="meta">In-house</p></a>
+          <a class="cert-tile" href="certificates/cert-06/"><h4>NDT Techniques</h4><p class="meta">Training</p></a>
+          <a class="cert-tile" href="certificates/cert-07/"><h4>NEBOSH Safety</h4><p class="meta">NEBOSH</p></a>
+          <a class="cert-tile" href="certificates/cert-08/"><h4>CSWIP Qualification</h4><p class="meta">CSWIP</p></a>
+          <a class="cert-tile" href="certificates/cert-09/"><h4>AutoCAD Essentials</h4><p class="meta">Institution</p></a>
+          <a class="cert-tile" href="certificates/cert-10/"><h4>Site Supervision &amp; QA</h4><p class="meta">Institute</p></a>
+          <a class="cert-tile" href="certificates/cert-11/"><h4>Project Management Basics</h4><p class="meta">PMI</p></a>
+          <a class="cert-tile" href="certificates/cert-12/"><h4>Revit MEP</h4><p class="meta">Autodesk</p></a>
+          <a class="cert-tile" href="certificates/cert-13/"><h4>Concrete Technology</h4><p class="meta">Training</p></a>
+          <a class="cert-tile" href="certificates/cert-14/"><h4>Material Testing Lab Practices</h4><p class="meta">Lab Course</p></a>
+          <a class="cert-tile" href="certificates/cert-15/"><h4>Surveying &amp; Measurement</h4><p class="meta">Course</p></a>
+          <a class="cert-tile" href="certificates/cert-16/"><h4>Data Visualization with Python</h4><p class="meta">Online</p></a>
+          <a class="cert-tile" href="certificates/cert-17/"><h4>Introduction to BIM</h4><p class="meta">Workshop</p></a>
+          <a class="cert-tile" href="certificates/cert-18/"><h4>Electrical Systems for Civil Engineers</h4><p class="meta">Seminar</p></a>
+          <a class="cert-tile" href="certificates/cert-19/"><h4>Quality Documentation &amp; Audits</h4><p class="meta">Institute</p></a>
+          <a class="cert-tile" href="certificates/cert-20/"><h4>Advanced Reinforced Concrete</h4><p class="meta">Course</p></a>
         </div>
       </section>
 
-      <!-- Optional simple list (matches your original markup) -->
-      <section>
-        <h3 style="margin-top:0.5rem;">Quick List</h3>
-        <ul class="list">
-          <li>Diploma in Quality Control &amp; Quality Assurance (Imech Institute Pvt Ltd)</li>
-          <li>Revit Structure Certified Professional (Autodesk)</li>
-          <li>One-day Technical Fest: Techno Fresh 2k15 — Photoshop</li>
-          <li>Python for Data Analysis — In progress</li>
-        </ul>
-      </section>
+      <!-- End -->
 
     </div>
   </main>
@@ -147,6 +105,6 @@
   </footer>
 
   <!-- Scripts -->
-  script.js</script>
+  <script src="script.js"></script>
 </body>
 </html>
