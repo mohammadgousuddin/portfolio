@@ -4,3 +4,5 @@ Examples:
 - certificate.pdf
 - thumbnail.jpg
 - notes.txt
+
+Note: A placeholder file named `certificate.pdf` has been added to this folder. Replace it with the actual certificate PDF when available.

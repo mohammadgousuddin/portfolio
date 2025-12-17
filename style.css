@@ -23,6 +23,9 @@ body{
   line-height:1.6;
   margin:0;
   padding-top:var(--nav-height);
+  /* Keep the page background fixed so it doesn't appear to move on scroll */
+  background-attachment: fixed;
+  background-position: center top;
 }
 
 /* Cards */
@@ -180,7 +183,8 @@ footer{padding:2rem 0;color:#fff;border-top:1px solid rgba(255,255,255,0.04);bac
 }
 
 /* Pop-out CTA button + panel */
-.popout-root{position:fixed;right:20px;bottom:20px;z-index:60}
+.popout-root{position:fixed;right:20px;bottom:20px;z-index:92;pointer-events:auto}
+.popout-root .popout-btn{position:relative;z-index:93}
 .popout-btn{background:linear-gradient(135deg,var(--brand),var(--brand-soft));color:#fff;border:none;padding:.65rem .85rem;border-radius:999px;box-shadow:0 8px 20px rgba(2,6,23,.6);cursor:pointer;display:inline-flex;align-items:center;gap:.6rem;font-weight:700}
 .popout-panel{position:absolute;right:0;bottom:56px;width:220px;max-width:80vw;background:var(--bg-soft);border:1px solid var(--border);padding:.6rem;border-radius:.75rem;box-shadow:0 12px 36px rgba(11,18,32,.06);display:none;flex-direction:column;gap:.4rem}
 .popout-panel.open{display:flex}
